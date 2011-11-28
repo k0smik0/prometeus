@@ -55,7 +55,7 @@ public class XmlReader<C> {
 		try {
 			return serializer.read(clazz, inputStream);		
 		} catch (Exception e) {
-			//e.printStackTrace();
+			e.printStackTrace();
 			throw new XmlReaderParsingException("error to parsing "+ inputStream +" into "+clazz.getCanonicalName());
 		}		
 	}		
